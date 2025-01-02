@@ -76,6 +76,7 @@ button {
   --spacing-300: 1.5rem;
   --spacing-400: 2rem;
   --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
   --spacing-700: 3.5rem;
   --spacing-800: 4rem;
   --spacing-900: 4.5rem;
@@ -86,8 +87,118 @@ button {
   --red-hat-display: 'Red Hat Display', sans-serif;
   --font-medium: 500;
   --font-black: 900;
-  --font-size-h1: 4rem;
-  --font-size-h2: 2.5rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
   --font-size-medium: 1.125rem;
 }
+
+body {
+    font-family: var(--red-hat-display);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h1, h2 {
+    color: var(--slate-900);
+}
+
+p {
+    color: var(--slate-600);
+}
+
+button {
+    border-radius: 10rem;
+    border: none;
+    font-weight: var(--font-black);
+    font-size: 1rem;
+    padding: var(--spacing-200) var(--spacing-500);
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.button-cyan {
+    background-color: var(--cyan-600);
+    color: var(--white);
+}
+
+.button-cyan:hover, .button-cyan:active, .button-cyan:focus {
+    background-color: #71C0D4;
+}
+
+.button-purple {
+    background-color: var(--purple-600);
+    color: var(--white);
+}
+
+.button-purple:hover, .button-purple:active, .button-purple:focus {
+    background-color: #B18BDD;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-600);
+}
+
+.cyan-text {
+    color: var(--cyan-300);
+    margin-left: var(--spacing-50);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "images"
+        "content";
+    gap: var(--spacing-200);
+    margin-top: var(--spacing-800);
+}
+
+.hero-images {
+    grid-area: images;
+    display: flex;
+    gap: var(--spacing-200);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-left, #hero-right {
+    width: 50%;
+    object-fit: cover;
+}
+
+.hero-text-content {
+    grid-area: content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-400);
+    gap: var(--spacing-300);
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-200);
+}
+
+
 

@@ -11,22 +11,30 @@
 </head>
 <body>
   <header>
-    <img src="./assets/logo.svg" alt="Meet logo">
+    <img src="./assets/logo.svg" alt="Meet logo" width="118" height="28">
   </header>
 
   <main>
-    <section>
-      <img src="./assets/desktop/image-hero-left.png" alt="Circular profile pictures">
-      <img src="./assets/desktop/image-hero-right.png" alt="Circular profile pictures">
-      <h1>Group Chat for Everyone</h1>
-      <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+    <section class="hero">
+      <div class="hero-images">
+        <img src="./assets/desktop/image-hero-left.png" alt="Circular profile pictures" id="hero-left">
+        <img src="./assets/desktop/image-hero-right.png" alt="Circular profile pictures" id="hero-right">
+      </div>
 
-      <button>Download v1.3</button>
-      <button>What is it?</button>
+      <div class="hero-text-content">
+        <h1>Group Chat for Everyone</h1>
+        <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="hero-buttons">
+          <button class="button-cyan">Download <span class="cyan-text">v1.3</span></button>
+          <button class="button-purple">What is it?</button>
+        </div>
+      </div>
+      
     </section>
-    <section>
+
+    <section class="main-content">
       <span>01</span>
-      <h2>Built for modern use</h2>
+      <p>Built for modern use</p>
 
       <h2>Smarter meetings, all in one place</h2>
 
@@ -39,7 +47,7 @@
     <span>02</span>
     <h2>Experience more together</h2>
     <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <button>Download v1.3</button>
+    <button class="button-purple">Download v1.3</button>
   </footer>
 </body>
 </html>
