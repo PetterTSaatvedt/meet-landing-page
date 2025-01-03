@@ -136,6 +136,11 @@ button {
     background-color: #71C0D4;
 }
 
+.cyan-text {
+  color: var(--cyan-300);
+  margin-left: var(--spacing-50);
+}
+
 .button-purple {
     background-color: var(--purple-600);
     color: var(--white);
@@ -145,6 +150,7 @@ button {
     background-color: #B18BDD;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: center;
@@ -152,11 +158,7 @@ header {
     margin-top: var(--spacing-600);
 }
 
-.cyan-text {
-    color: var(--cyan-300);
-    margin-left: var(--spacing-50);
-}
-
+/* Hero content */
 .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -198,6 +200,56 @@ header {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-200);
+}
+
+/* Main content */
+.section-number {
+  color: var(--slate-600);
+  font-weight: var(--font-black);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  line-height: 1.5;
+  background-color: var(--white);
+  /* Border inside */
+  -webkit-box-shadow:inset 0px 0px 0px 1px var(--slate-300);
+  -moz-box-shadow:inset 0px 0px 0px 1px var(--slate-300);
+  box-shadow:inset 0px 0px 0px 1px var(--slate-300);
+}
+
+.section-number-line {
+  border-left: 1px solid var(--slate-300);
+  height: 5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-400) var(--spacing-400) var(--spacing-800);
+}
+
+.main-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--spacing-200);
+  margin: var(--spacing-800) 0 var(--spacing-800);
+}
+
+.grid-image {
+  border-radius: var(--spacing-200);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
