@@ -40,8 +40,8 @@ h1, h2, h3, button {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* Inherit fonts for buttons */
@@ -113,22 +113,22 @@ p {
 }
 
 button {
-    border-radius: 10rem;
-    border: none;
-    font-weight: var(--font-black);
-    font-size: 1rem;
-    padding: var(--spacing-200) var(--spacing-500);
-    line-height: 1.5;
-    cursor: pointer;
+  border-radius: 10rem;
+  border: none;
+  font-weight: var(--font-black);
+  font-size: 1rem;
+  padding: var(--spacing-200) var(--spacing-500);
+  line-height: 1.5;
+  cursor: pointer;
 }
 
 .button-cyan {
-    background-color: var(--cyan-600);
-    color: var(--white);
+  background-color: var(--cyan-600);
+  color: var(--white);
 }
 
 .button-cyan:hover, .button-cyan:active, .button-cyan:focus {
-    background-color: #71C0D4;
+  background-color: #71C0D4;
 }
 
 .cyan-text {
@@ -142,56 +142,57 @@ button {
 }
 
 .button-purple {
-    background-color: var(--purple-600);
-    color: var(--white);
+  background-color: var(--purple-600);
+  color: var(--white);
 }
 
 .button-purple:hover, .button-purple:active, .button-purple:focus {
-    background-color: #B18BDD;
+  background-color: #B18BDD;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--spacing-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--spacing-600);
 }
 
 /* Hero content */
 .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "images"
-        "content";
-    gap: var(--spacing-200);
-    margin-top: var(--spacing-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-600);
+  margin-top: var(--spacing-800);
 }
 
 .hero-images {
-    grid-area: images;
-    display: flex;
-    gap: var(--spacing-200);
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-#hero-left, #hero-right {
-    width: 50%;
-    object-fit: cover;
+.desktop-hero-images {
+  display: none;
 }
 
 .hero-text-content {
-    grid-area: content;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-400);
-    gap: var(--spacing-300);
+  grid-area: content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-400);
+  gap: var(--spacing-300);
+  max-width: 28rem;
+}
+
+h1 {
+  text-wrap: balance;
 }
 
 .hero-text-content-paragraph {

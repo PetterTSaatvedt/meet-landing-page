@@ -16,10 +16,17 @@
 
   <main>
     <section class="hero">
-      <div class="hero-images">
-        <img src="./assets/desktop/image-hero-left.png" alt="Circular profile pictures" id="hero-left">
-        <img src="./assets/desktop/image-hero-right.png" alt="Circular profile pictures" id="hero-right">
-      </div>
+      <picture class="hero-images">
+        <!-- Desktop view (split images) -->
+        <source media="(min-width: 1024px)">
+          <div class="desktop-hero-images">
+            <img src="./assets/desktop/image-hero-left.png" alt="Circular profile pictures" id="hero-left">
+            <img src="./assets/desktop/image-hero-right.png" alt="Circular profile pictures" id="hero-right">
+          </div>
+        </source>
+        <!-- Mobile and Tablet view (fallback) -->
+        <img src="./assets/tablet/image-hero.png" alt="Circular profile pictures" class="combined-hero-image">
+      </picture>
 
       <div class="hero-text-content">
         <h1>Group Chat for Everyone</h1>
