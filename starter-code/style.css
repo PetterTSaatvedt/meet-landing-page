@@ -155,7 +155,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--spacing-600);
+  padding-top: var(--spacing-600);
 }
 
 /* Hero content */
@@ -165,13 +165,17 @@ header {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-600);
-  margin-top: var(--spacing-800);
+  padding: var(--spacing-800) 0 var(--spacing-400);
 }
 
 .hero-images {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.combined-hero-image {
   width: 100%;
 }
 
@@ -257,6 +261,8 @@ h1 {
 .main-text-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: var(--spacing-400);
 }
 
@@ -314,6 +320,14 @@ footer {
   object-fit: cover;
 }
 
+.footer-content-container {
+  width: 100%;
+  background-color: #4d97a9d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -324,7 +338,6 @@ footer {
   padding: var(--spacing-800) var(--spacing-400);
   gap: var(--spacing-300);
   width: 100%;
-  background-color: #4d97a9d5;
 }
 
 .footer-content h2 {
@@ -335,6 +348,75 @@ footer {
   font-size: var(--text-preset-4);
   font-weight: var(--font-medium);
   color: var(--white);
+}
+
+@media screen and (min-width: 768px){
+  :root {
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+    --text-preset-3: 0.875rem;
+    --text-preset-4: 1rem;
+  }
+
+  .hero {
+    gap: var(--spacing-900);
+    padding-bottom: var(--spacing-800);
+  }
+
+  .hero-text-content {
+    padding: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .main-content {
+    padding-top: var(--spacing-700);
+  }
+
+  .main-image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: var(--spacing-200);
+    margin: var(--spacing-800) 0 var(--spacing-800);
+  }
+
+  .main-text-content {
+    max-width: 31.5rem;
+  }
+
+  .main-text-content-title {
+    max-width: 27.813rem;
+  }
+
+  .footer-content {
+    max-width: 31.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 992px){
+  :root {
+    --font-size-h1: 4rem;
+    --font-size-h2: 2.5rem;
+    --text-preset-3: 1rem;
+    --text-preset-4: 1.125rem;
+  }
+
+  header {
+    padding-top: var(--spacing-1000);
+  }
+
+  .combined-hero-image {
+    display: none;
+  }
+
+  .desktop-hero-images {
+    display: block;
+  }
 }
 
 
