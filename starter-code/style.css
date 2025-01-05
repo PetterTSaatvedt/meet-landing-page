@@ -427,10 +427,12 @@ h1 {
 
   #hero-left {
     margin: 0 auto 0 0;
+    transform: translateY(-10%);
   }
 
   #hero-right {
     margin: 0 0 0 auto;
+    transform: translateY(10%);
   }
 
   .hero {
