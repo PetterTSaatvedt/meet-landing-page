@@ -191,7 +191,7 @@ footer {
   width: 100%;
 }
 
-#hero-left, #hero-right {
+.hero-faces-left, .hero-faces-right {
   display: none;
 }
 
@@ -343,7 +343,6 @@ h1 {
   justify-content: center;
   text-align: center;
   z-index: 1;
-  
   gap: var(--spacing-300);
   width: 100%;
 }
@@ -421,24 +420,37 @@ h1 {
     display: none;
   }
 
-  #hero-left, #hero-right {
+  .hero-faces-left {
     display: block;
+    background: url('./assets/desktop/image-hero-left.png');
+    background-repeat: no-repeat;
+    background-position: center left -1rem;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-1.5rem);
   }
 
-  #hero-left {
-    margin: 0 auto 0 0;
-    transform: translateY(-10%);
-  }
-
-  #hero-right {
-    margin: 0 0 0 auto;
-    transform: translateY(10%);
+  .hero-faces-right {
+    display: block;
+    background-image: url('./assets/desktop/image-hero-right.png');
+    background-repeat: no-repeat;
+    background-position: center right -1rem;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    transform: translateY(1.5rem);
   }
 
   .hero {
+    gap: var(--spacing-600);
+    padding: var(--spacing-800) 0 var(--spacing-400);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;  /* One column layout */
+    place-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 90rem;
   }
 
   .main-content-section {
