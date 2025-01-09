@@ -185,10 +185,11 @@ footer {
   justify-content: center;
   gap: var(--spacing-600);
   padding: var(--spacing-800) 0 var(--spacing-400);
+  overflow: hidden;
 }
 
 .combined-hero-image {
-  width: 100%;
+  max-width: 115%;
 }
 
 .hero-faces-left, .hero-faces-right {
